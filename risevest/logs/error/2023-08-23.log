@@ -1,0 +1,249 @@
+2023-08-23 20:25:54 error: uncaughtException: Please install pg package manually
+Error: Please install pg package manually
+    at ConnectionManager._loadDialectModule (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/dialects/abstract/connection-manager.js:81:15)
+    at new ConnectionManager (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/dialects/postgres/connection-manager.js:18:24)
+    at new PostgresDialect (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/dialects/postgres/index.js:15:30)
+    at new Sequelize (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/sequelize.js:368:20)
+    at Object.<anonymous> (/Users/felixawa/Documents/risevest/src/databases/index.ts:6:19)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module.m._compile (/Users/felixawa/Documents/risevest/node_modules/ts-node/src/index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/felixawa/Documents/risevest/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+2023-08-23 20:27:43 error: uncaughtException: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+Error: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/felixawa/Documents/risevest/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._resolveFilename (/Users/felixawa/Documents/risevest/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/src/decorator/string/IsPhoneNumber.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.require.extensions.<computed> [as .js] (/Users/felixawa/Documents/risevest/node_modules/ts-node/src/index.ts:1608:43)
+2023-08-23 20:27:43 error: uncaughtException: role "root" does not exist
+SequelizeConnectionError: role "root" does not exist
+    at Client._connectionCallback (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:526:28)
+    at Connection.emit (node:domain:475:12)
+    at /Users/felixawa/Documents/risevest/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:526:28)
+    at Socket.emit (node:domain:475:12)
+2023-08-23 20:29:51 error: uncaughtException: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+Error: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/felixawa/Documents/risevest/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._resolveFilename (/Users/felixawa/Documents/risevest/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/src/decorator/string/IsPhoneNumber.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.require.extensions.<computed> [as .js] (/Users/felixawa/Documents/risevest/node_modules/ts-node/src/index.ts:1608:43)
+2023-08-23 20:29:51 error: uncaughtException: role "root" does not exist
+SequelizeConnectionError: role "root" does not exist
+    at Client._connectionCallback (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:526:28)
+    at Connection.emit (node:domain:475:12)
+    at /Users/felixawa/Documents/risevest/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:526:28)
+    at Socket.emit (node:domain:475:12)
+2023-08-23 20:40:01 error: uncaughtException: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+Error: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/felixawa/Documents/risevest/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._resolveFilename (/Users/felixawa/Documents/risevest/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/src/decorator/string/IsPhoneNumber.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.require.extensions.<computed> [as .js] (/Users/felixawa/Documents/risevest/node_modules/ts-node/src/index.ts:1608:43)
+2023-08-23 20:40:01 error: uncaughtException: role "postgres" does not exist
+SequelizeConnectionError: role "postgres" does not exist
+    at Client._connectionCallback (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:526:28)
+    at Connection.emit (node:domain:475:12)
+    at /Users/felixawa/Documents/risevest/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:526:28)
+    at Socket.emit (node:domain:475:12)
+2023-08-23 20:53:34 error: uncaughtException: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+Error: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/felixawa/Documents/risevest/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._resolveFilename (/Users/felixawa/Documents/risevest/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/src/decorator/string/IsPhoneNumber.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.require.extensions.<computed> [as .js] (/Users/felixawa/Documents/risevest/node_modules/ts-node/src/index.ts:1608:43)
+2023-08-23 20:53:34 error: uncaughtException: role "postgres" does not exist
+SequelizeConnectionError: role "postgres" does not exist
+    at Client._connectionCallback (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:526:28)
+    at Connection.emit (node:domain:475:12)
+    at /Users/felixawa/Documents/risevest/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:526:28)
+    at Socket.emit (node:domain:475:12)
+2023-08-23 20:58:14 error: uncaughtException: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+Error: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/felixawa/Documents/risevest/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._resolveFilename (/Users/felixawa/Documents/risevest/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/src/decorator/string/IsPhoneNumber.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.require.extensions.<computed> [as .js] (/Users/felixawa/Documents/risevest/node_modules/ts-node/src/index.ts:1608:43)
+2023-08-23 20:58:14 error: uncaughtException: database "dev" does not exist
+SequelizeConnectionError: database "dev" does not exist
+    at Client._connectionCallback (/Users/felixawa/Documents/risevest/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/Users/felixawa/Documents/risevest/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:526:28)
+    at Connection.emit (node:domain:475:12)
+    at /Users/felixawa/Documents/risevest/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:526:28)
+    at Socket.emit (node:domain:475:12)
+2023-08-23 20:59:26 error: uncaughtException: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+Error: Cannot find module 'libphonenumber-js'
+Require stack:
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/string/IsPhoneNumber.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/decorator/decorators.js
+- /Users/felixawa/Documents/risevest/node_modules/class-validator/cjs/index.js
+- /Users/felixawa/Documents/risevest/src/dtos/users.dto.ts
+- /Users/felixawa/Documents/risevest/src/routes/auth.route.ts
+- /Users/felixawa/Documents/risevest/src/server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (/Users/felixawa/Documents/risevest/node_modules/@cspotcode/source-map-support/source-map-support.js:811:30)
+    at Function.Module._resolveFilename (/Users/felixawa/Documents/risevest/node_modules/tsconfig-paths/src/register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/felixawa/Documents/risevest/node_modules/src/decorator/string/IsPhoneNumber.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Object.require.extensions.<computed> [as .js] (/Users/felixawa/Documents/risevest/node_modules/ts-node/src/index.ts:1608:43)
+2023-08-23 22:44:31 error: [POST] /auth/signup >> StatusCode:: 400, Message:: email must be an email, password must be a string, username must be a string
+2023-08-23 22:48:59 error: [POST] /auth/signup >> StatusCode:: 404, Message:: Authentication token missing
+2023-08-23 22:59:53 error: [GET] /users/123/posts >> StatusCode:: 500, Message:: invalid input syntax for type uuid: "123"
+2023-08-23 23:00:03 error: [GET] /users/1/posts >> StatusCode:: 500, Message:: invalid input syntax for type uuid: "1"
+2023-08-23 23:02:02 error: [GET] /users/3/posts >> StatusCode:: 500, Message:: invalid input syntax for type uuid: "3"
+2023-08-23 23:02:15 error: [GET] /users/232/posts >> StatusCode:: 500, Message:: invalid input syntax for type uuid: "232"
+2023-08-23 23:08:21 error: [POST] /users >> StatusCode:: 409, Message:: This email felixhope30@gmaail.com already exists
+2023-08-23 23:08:28 error: [POST] /users >> StatusCode:: 409, Message:: This username Phelickz already exists
+2023-08-23 23:09:54 error: [POST] /users/e8f38b9c-ecbb-4a1a-bef8-30608cb87b89/posts >> StatusCode:: 400, Message:: title must be a string, content must be a string
+2023-08-23 23:12:18 error: [GET] /users/e8f38b9c-ecbb-4a1a-bef8-30608cb87b89/posts >> StatusCode:: 404, Message:: Authentication token missing
+2023-08-23 23:12:29 error: [POST] /users/e8f38b9c-ecbb-4a1a-bef8-30608cb87b89/posts >> StatusCode:: 404, Message:: Authentication token missing
+2023-08-23 23:12:40 error: [POST] /users/e8f38b9c-ecbb-4a1a-bef8-30608cb87b89/posts >> StatusCode:: 400, Message:: title must be a string, content must be a string
+2023-08-23 23:13:18 error: [POST] /users/e8f38b9c-ecbb-4a1a-bef8-30608cb87b89/posts >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'id')
+2023-08-23 23:16:20 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2023-08-23 23:24:32 error: [POST] /posts/3bf20bb2-542e-4e45-954d-29bcf0c8a467/comment >> StatusCode:: 404, Message:: Authentication token missing
+2023-08-23 23:24:49 error: [POST] /posts/3bf20bb2-542e-4e45-954d-29bcf0c8a467/comment >> StatusCode:: 400, Message:: content must be a string
+2023-08-23 23:27:47 error: [GET] /users/e8f38b9c-ecbb-4a1a-bef8-30608cb87b89/posts >> StatusCode:: 500, Message:: CommentModel is associated to PostModel using an alias. You've included an alias (comments), but it does not match the alias(es) defined in your association (CommentModels).
+2023-08-23 23:29:00 error: [GET] /users/top-users >> StatusCode:: 500, Message:: UserModel is associated to CommentModel using an alias. You've included an alias (user), but it does not match the alias(es) defined in your association (UserModel).
+2023-08-23 23:36:02 error: [GET] /users/top-users >> StatusCode:: 500, Message:: column user.userId does not exist
+2023-08-23 23:36:12 error: [GET] /users/top-users >> StatusCode:: 500, Message:: column user.user_id does not exist
+2023-08-23 23:55:47 error: [GET] /users/top-users >> StatusCode:: 401, Message:: Wrong authentication token

@@ -1,0 +1,77 @@
+2023-08-24 00:36:01 error: uncaughtException: connect ECONNREFUSED 127.0.0.1:5432
+SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:5432
+    at Client._connectionCallback (/app/node_modules/sequelize/src/dialects/postgres/connection-manager.js:179:24)
+    at Client._handleErrorWhileConnecting (/app/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorEvent (/app/node_modules/pg/lib/client.js:337:19)
+    at Connection.emit (node:events:514:28)
+    at Connection.emit (node:domain:489:12)
+    at Socket.reportStreamError (/app/node_modules/pg/lib/connection.js:58:12)
+    at Socket.emit (node:events:514:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+2023-08-24 00:36:40 error: uncaughtException: password authentication failed for user "postgres"
+SequelizeConnectionError: password authentication failed for user "postgres"
+    at Client._connectionCallback (/app/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/app/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/app/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:514:28)
+    at Connection.emit (node:domain:489:12)
+    at /app/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/app/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/app/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:514:28)
+    at Socket.emit (node:domain:489:12)
+2023-08-24 00:39:56 error: uncaughtException: password authentication failed for user "postgres"
+SequelizeConnectionError: password authentication failed for user "postgres"
+    at Client._connectionCallback (/app/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/app/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/app/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:514:28)
+    at Connection.emit (node:domain:489:12)
+    at /app/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/app/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/app/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:514:28)
+    at Socket.emit (node:domain:489:12)
+2023-08-24 00:41:54 error: [GET] / >> StatusCode:: 500, Message:: Cannot set headers after they are sent to the client
+2023-08-24 00:43:03 error: [GET] /users >> StatusCode:: 401, Message:: Wrong authentication token
+2023-08-24 00:43:06 error: [POST] /auth/login >> StatusCode:: 409, Message:: This email felixhope30@gmaail.com was not found
+2023-08-24 09:51:27 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Kenyatta24@gmail.com was not found
+2023-08-24 10:07:26 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Esta67@gmail.com was not found
+2023-08-24 10:10:59 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Francesco.Metz@hotmail.com was not found
+2023-08-24 10:11:42 error: [POST] /users/ >> StatusCode:: 410, Message:: This email Evans45@hotmail.com was not found
+2023-08-24 10:12:00 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Sammy24@yahoo.com was not found
+2023-08-24 10:12:44 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Gina_Raynor@yahoo.com was not found
+2023-08-24 10:13:14 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Emanuel8@hotmail.com was not found
+2023-08-24 10:14:06 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Maynard_Torp@hotmail.com was not found
+2023-08-24 10:15:34 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Rosario_Cruickshank@hotmail.com was not found
+2023-08-24 10:25:27 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Stephon_Klein68@yahoo.com already exists
+2023-08-24 10:29:13 error: [POST] /users/ >> StatusCode:: 409, Message:: This email Joyce_Metz43@gmail.com already exists
+2023-08-24 10:41:04 error: [GET] /users/ >> StatusCode:: 401, Message:: Wrong authentication token
+2023-08-24 12:29:55 error: uncaughtException: connection is insecure (try using `sslmode=require`)
+SequelizeConnectionError: connection is insecure (try using `sslmode=require`)
+    at Client._connectionCallback (/Users/felixawa/Documents/risevest-api/risevest/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/Users/felixawa/Documents/risevest-api/risevest/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/Users/felixawa/Documents/risevest-api/risevest/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:526:28)
+    at Connection.emit (node:domain:475:12)
+    at /Users/felixawa/Documents/risevest-api/risevest/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/Users/felixawa/Documents/risevest-api/risevest/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/Users/felixawa/Documents/risevest-api/risevest/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:526:28)
+    at Socket.emit (node:domain:475:12)
+2023-08-24 12:31:27 error: uncaughtException: connection is insecure (try using `sslmode=require`)
+SequelizeConnectionError: connection is insecure (try using `sslmode=require`)
+    at Client._connectionCallback (/Users/felixawa/Documents/risevest-api/risevest/node_modules/sequelize/src/dialects/postgres/connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (/Users/felixawa/Documents/risevest-api/risevest/node_modules/pg/lib/client.js:327:19)
+    at Client._handleErrorMessage (/Users/felixawa/Documents/risevest-api/risevest/node_modules/pg/lib/client.js:347:19)
+    at Connection.emit (node:events:526:28)
+    at Connection.emit (node:domain:475:12)
+    at /Users/felixawa/Documents/risevest-api/risevest/node_modules/pg/lib/connection.js:117:12
+    at Parser.parse (/Users/felixawa/Documents/risevest-api/risevest/node_modules/pg-protocol/src/parser.ts:104:9)
+    at Socket.<anonymous> (/Users/felixawa/Documents/risevest-api/risevest/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:526:28)
+    at Socket.emit (node:domain:475:12)
+2023-08-24 12:37:38 error: [POST] /auth/login >> StatusCode:: 409, Message:: This email felixhope30@gmaail.com was not found
+2023-08-24 23:59:17 error: [POST] /posts/3bf20bb2-542e-4e45-954d-29bcf0c8a467/comment >> StatusCode:: 401, Message:: Wrong authentication token

@@ -1,0 +1,38 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: risevest-postgres
+    env_file: .env.development.local
+    networks:
+      - internal
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: risevest/
+      dockerfile: Dockerfile
+      target: development-build-stage
+    image: ricevest.azurecr.io/risevest
+    container_name: risevest
+    ports:
+      - '${PORT:-3000}:3000'
+    env_file: .env.development.local
+    volumes:
+      - './risevest:/app'
+      - '/app/node_modules'
+    networks:
+      - internal
+    depends_on:
+      - postgres
+    hostname: api
+
+networks:
+  internal:
+    external: false
+
+volumes:
+  pgdata:

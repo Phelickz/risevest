@@ -1,0 +1,56 @@
+I will describe the steps I performed for optimization as follows:
+
+I precomputed User Post Counts and the Latest Post CreatedAt by utilizing a GROUP BY operation 
+on the posts table. This precomputation is achieved within a subquery named "user_posts." 
+Instead of calculating the number of posts and the latest createdAt for each user separately, 
+I condensed the process. As a result, I simplified the fundamental inquiry and reduced the overall 
+number of calculations.
+
+I performed a join operation on the Most Recent Post Dated. 
+By linking the posts table with the previously precomputed "user_posts" subquery, 
+I united the data based on both the userId and max_createdAt.
+
+I precalculated the Latest Comment CreatedAt in a subquery labeled "latest_comment." 
+Similar to the first step, I determined the maximum createdAt value for each post's comments. 
+This preparation allowed for easy interaction with the most recent comments associated with each post.
+
+I executed a join operation on the Latest Comment CreatedAt. 
+This step enabled me to acquire the latest comment content for each post. 
+I connected the "latest_comment" subquery with the posts table join in the primary query. 
+By optimizing the query structure and utilizing precomputed values, 
+I aimed to enhance query speed while minimizing the necessity for intricate subqueries and complex conditions. 
+To further augment query performance, I made certain that relevant columns such as userId and 
+createdAt are appropriately indexed.
+
+QUERY:
+
+SELECT
+  users.id,
+  users.name,
+  posts.title,
+  latest_comment.content
+FROM users
+LEFT JOIN (
+  SELECT
+    userId,
+    COUNT(id) AS post_count,
+    MAX(createdAt) AS max_createdAt
+  FROM posts
+  GROUP BY userId
+) AS user_posts ON users.id = user_posts.userId
+LEFT JOIN posts ON user_posts.userId = posts.userId AND user_posts.max_createdAt = posts.createdAt
+LEFT JOIN (
+  SELECT
+    postId,
+    content,
+    MAX(createdAt) AS max_createdAt
+  FROM comments
+  GROUP BY postId
+) AS latest_comment ON posts.id = latest_comment.postId AND user_posts.max_createdAt = latest_comment.max_createdAt
+ORDER BY user_posts.post_count DESC
+LIMIT 3;
+
+
+
+
+
